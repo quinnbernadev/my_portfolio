@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+font-family: 'poppins', sans-serif;
+color: white;
+padding-top:60px;
+height: 200rem;}
+
+section{
+  padding-inline: 150px;  
+  padding-block: 80px;
+}
+
+
+nav{
+width: 100vw;
+height: 70px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 50px;
+background-color: #0F110C;
+position: fixed;
+top: 0;
+left: 0; 
+z-index: 999;
+}
+nav img{
+  width: 50px;
+  cursor: pointer;
+  
+}
+
+.logo-cont{
+display: flex;
+cursor: pointer;
+text-decoration: none;
+
+}
+.logo-text{
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.logo-text > h2{
+  border: 1px #DA4773 solid;
+  padding: 5px;
+  font-size: 24px;
+
+}
+
+.logo-text > span{
+  background-color: #0F110C;
+  font-size: 12px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+
+}
+/* 
+nav h1{
+letter-spacing: 1px;
+cursor: pointer;
+}
+
+nav h1>span{
+  color: deeppink;
+  font-size: 55px;
+} */
+
+
+nav ul>li{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav .navlink{
+  color: white;
+  text-decoration: none;
+  transition: 0.15s ease;
+}
+
+nav .navlink:hover{
+  cursor: pointer;
+  color: deeppink;
+  border-bottom: 2px solid deeppink ;
+}
+
+.btn{   
+    background-image: linear-gradient(to right, #B24592 0%, #F15F79  51%, #B24592  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto; 
+    color: white;            
+    box-shadow: 0 0 5px #eee;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  /* background-color: #9B5DE5;
+  color: white;
+  border: 2px #DA4773 solid;
+  border-radius: 20px;
+  padding: 13px; */
+
+
+/* nav .links>a {
+  color: white;
+  margin-left: 10px;
+} */
+
+.links{
+  position: fixed;
+  bottom : 50%;
+  right: 50px;
+  transform: translateY(50%);
+  z-index: 900;
+  background-color:#DA4773; 
+  display: grid;
+  padding: 10px;
+  border-radius: 1000vmax;
+}
+
+.links > a{
+  color: white;
+  
+}
+
+.hero{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #0F110C;
+  
+}
+
+
+
+.hero > .hero-bg {
+
+}
+
+.hero .hero-bg > img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+.content{
+  width: 60%;
+  height: 50%;
+  padding: 10px;
+}
+
+.content> h1{
+  font-size: 64px;
+} 
+.content> h4{
+  margin-bottom: 20px;
+}
+
+.cvlink{
+  color: #DA4773;
+}
+
+.cvlink > i {
+  animation: .5s infinite alternate arrow;
+}
+
+@keyframes arrow {
+  from{
+     margin-left: 0px;
+  }
+  to{
+margin-left: 5px;
+  
+  }
+}
+
+
+
+
+.about{
+  position: relative;
+  color: black;
+  padding-top: 190px;
+  padding-bottom: 0;
+}
+
+.about > #wave{
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+}
+
+.about > #wave1{
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 100%;
+}
+
+.about-title{
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+
+.about-cont{
+  display: flex;  
+  }
+
+.about-one > img{
+    border-radius: 30px;
+    margin: 20px;
+    width: 400px;
+}
+
+.about-two{
+    margin: 20px;
+}
+
+.about-two > h4{
+  margin-bottom: 8px;
+}
+
+.about-two > .btn{
+  margin-inline: auto;
+}
+
+.about-three{
+  border: 1px hotpink solid;
+  text-align: center;
+  padding-block: 50px;
+  color: white;
+  background-color: #DA4773;
+}
+
+.about-three > h2{
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.about-three > i {
+  font-size: 70px;  
+  margin-inline: 50px;
+}
+
+.portfolio{
+  background-color: #0F110C;
+}
+
+.portfolio-title > h2{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.portfolio-container{
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.portfolio-box{
+  height: 300px;
+  width: 300px;
+  border: 2px white solid;
+  border-radius: 5px;
+  /* overflow: hidden; */
+  
+
+}
+
+.portfolio-box > img{
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.portfolio > .btn{
+  margin-block: 30px;
+  margin-inline: auto;
+}
+
+
+.contact{
+  background-color: #0F110C;
+}
+
+.contact-title{
+text-align: center;
+margin-bottom: 30px;
+}
+
+.contact-info{
+  display: flex;
+  justify-content: space-around;
+}
